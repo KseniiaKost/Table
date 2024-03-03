@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <input class="search-field" type="text" placeholder="search" />
+      </div>
+      <div class="device">
+        <button class="device-btn">iPhone/iPod</button>
+        <button class="device-btn">iPad</button>
+      </div>
+      <div class="buttons"></div>
+      <button class="download-btn">Download .CSV</button>
+      <button class="add-request-btn">Add request</button>
+    </header>
+
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th class="first-fixed-column fixed-column">
+              <input
+                type="checkbox"
+                id="select-all"
+                onchange="selectAllRows(this)"
+              />
+              <label for="select-all">Выбрать все</label>
+            </th>
+            <th class="second-fixed-column fixed-column2">Оценка частотн.</th>
+            <th>дата</th>
+            <th>дата</th>
+            <th>дата</th>
+            <th>дата</th>
+            <th>дата</th>
+            <th>дата</th>
+            <th>дата</th>
+            <th>дата</th>
+            <th>дата</th>
+            <th>дата</th>
+            <th>дата</th>
+            <th>дата</th>
+            <th>дата</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="fixed-column">
+              <input type="checkbox" />
+              <button class="bank-btn">Банк &#9658;</button>
+            </td>
+            <th class="fixed-column2">оценка</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+          </tr>
+          <tr>
+            <td class="fixed-column">
+              <input type="checkbox" /><button class="bank-reviews-btn">
+                Банк Отзывы &#9658;
+              </button>
+            </td>
+            <th class="fixed-column2">оценка</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+          </tr>
+          <tr>
+            <td class="fixed-column">
+              <input type="checkbox" /><button class="bank-btn">
+                Банк &#9658;
+              </button>
+            </td>
+            <th class="fixed-column2">оценка</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+          </tr>
+          <tr>
+            <td class="fixed-column">
+              <input type="checkbox" /><button class="bank-reviews-btn">
+                Банк Отзывы &#9658;
+              </button>
+            </td>
+            <th class="fixed-column2">оценка</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+          </tr>
+          <tr>
+            <td class="fixed-column">
+              <input type="checkbox" /><button class="bank-btn">
+                Банк &#9658;
+              </button>
+            </td>
+            <th class="fixed-column2">оценка</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+          </tr>
+          <tr>
+            <td class="fixed-column">
+              <input type="checkbox" /><button class="bank-reviews-btn">
+                Банк Отзывы &#9658;
+              </button>
+            </td>
+            <th class="fixed-column2">оценка</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+          </tr>
+          <tr>
+            <td class="fixed-column">
+              <input type="checkbox" /><button class="bank-btn">
+                Банк &#9658;
+              </button>
+            </td>
+            <th class="fixed-column2">оценка</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+          </tr>
+          <tr>
+            <td class="fixed-column">
+              <input type="checkbox" /><button class="bank-reviews-btn">
+                Банк Отзывы &#9658;
+              </button>
+            </td>
+            <th class="fixed-column2">оценка</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+          </tr>
+          <tr>
+            <td class="fixed-column">
+              <input type="checkbox" /><button class="bank-btn">
+                Банк &#9658;
+              </button>
+            </td>
+            <th class="fixed-column2">оценка</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+            <th>рейтинг</th>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
